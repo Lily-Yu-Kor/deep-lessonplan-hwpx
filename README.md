@@ -39,6 +39,26 @@ bash setup.sh                     # (선택) 미리보기용: LibreOffice, Java,
   `vendor/`로 내려받습니다.
 - 미리보기에는 나눔고딕 글꼴(`fonts-nanum`)이 있으면 좋습니다.
 
+### (선택) 성취기준 커넥터 cu2022 연결
+AI 에이전트(MCP 지원 클라이언트)에서 쓸 때는 성취기준 검색·검증용 MCP 서버
+[cu2022-mcp](https://github.com/reallygood83/2022CU-kr0-mcp)(Node.js 18+ 필요)를 함께 연결하면 좋습니다.
+없어도 `lookup.py`만으로 성취기준을 조회할 수 있습니다.
+```json
+{
+  "mcpServers": {
+    "cu2022": { "command": "npx", "args": ["-y", "github:reallygood83/cu2022"] }
+  }
+}
+```
+(`reallygood83/cu2022`는 `reallygood83/2022CU-kr0-mcp`로 연결됩니다. 클라이언트별 설정 위치는 해당 저장소 README를 보세요.)
+
+### AI 에이전트 스킬로 쓰기
+1. 저장소를 클론하고 (필요하면) `bash setup.sh`로 미리보기 도구를 설치합니다.
+2. 에이전트의 스킬(또는 시스템 지침)에 [`SKILL.md`](SKILL.md)를 등록합니다. 스킬 안의 경로는 클론한 폴더 기준으로 바꿔 주세요.
+3. 한 줄로 요청합니다(아래 [요청 형식](#요청-형식-ai-에이전트스킬로-쓸-때)). 에이전트는 성취기준 후보 2~4개를 보여 주고,
+   교사가 고른 뒤에 지도안(.hwpx)을 만들어 쪽 넘김까지 확인합니다.
+4. 받은 .hwpx는 한컴오피스 한글에서 열어 내용과 쪽 나눔을 최종 확인합니다.
+
 ## 빠른 실행
 ```bash
 python3 render.py examples/초5_영어_길묻고답하기.json -o out/초5_영어.hwpx --allowed-codes 6영02-05
