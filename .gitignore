@@ -1,0 +1,7 @@
+vendor/
+out/
+*.pdf
+*.hwpx
+*.png
+__pycache__/
+*.pyc

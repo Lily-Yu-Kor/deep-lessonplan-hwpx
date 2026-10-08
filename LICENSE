@@ -1,0 +1,39 @@
+MIT License (코드에만 적용)
+
+Copyright (c) 2026 Lily-Yu-Kor
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+적용 범위 안내 (Scope)
+
+위 MIT 라이선스는 이 저장소의 프로그램 코드(*.py, setup.sh, fonts-render.conf)와
+코드 설명 문서에만 적용됩니다.
+
+data/curriculum/*.json 의 교육과정 내용(핵심 아이디어, 내용 요소, 성취기준, 성취기준 해설,
+성취기준 적용 시 고려 사항, 영어과 [별표 2] 의사소통 기능과 예시문)은
+교육부 고시 제2022-33호 「초·중등학교 교육과정」(별책 5~15)에서 추출한 것으로,
+교육부의 공공저작물입니다. 이 데이터에는 MIT 라이선스가 적용되지 않으며,
+이용 시 원 저작물의 이용 조건(공공누리 등 교육부·국가교육과정정보센터가 정한 조건)을 따르고
+출처를 밝혀 주십시오. 원문: 국가교육과정정보센터(NCIC) https://ncic.re.kr
+
+The MIT license above applies to the source code only. The curriculum content in
+data/curriculum/*.json is extracted from the Korean Ministry of Education Notice
+No. 2022-33 (national curriculum) and is a public work of the Ministry of Education;
+it is not covered by the MIT license.
